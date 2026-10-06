@@ -1,0 +1,21 @@
+{
+  "name": "playwright-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:login": "playwright test tests/LoginPageTest.spec.js",
+    "test:login:auth": "playwright test tests/LoginPageTest.spec.js --grep \"logs in with valid credentials\"",
+    "test:asset-inventory": "playwright test tests/AssetInventory.spec.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.4.1",
+    "dotenv": "^16.4.7"
+  }
+}
